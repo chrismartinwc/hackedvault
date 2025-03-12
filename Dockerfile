@@ -14,7 +14,7 @@ RUN go build -o scanner
 # Final image
 # Alternative Base Image: Use a GHCR-hosted image instead of Docker Hub
 # FROM ghcr.io/recursivebugs/hackedvault/alpine:latest
-FROM alpine:3.15
+FROM alpine:latest
 
 # Set environment variables with defaults
 ENV ADMIN_USERNAME=admin \
@@ -33,7 +33,7 @@ WORKDIR /app
 RUN apk add --update nodejs npm
 
 # Install libssl
-RUN apk add --no-cache libssl1.1
+
 
 # HANA DB config file
 RUN echo "WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo=" | base64 -d > /tmp/sap4hana.dat
