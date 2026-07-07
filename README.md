@@ -1,6 +1,10 @@
 # HackedVault - Secure File Storage with Malware Scanning
 
+
+Disclaimer: This application is designed for demo purposes only. It is not intended for production deployment under any circumstances. Use at your own risk.
+
 HackedVault is a containerized file storage application with malware scanning capabilities, web interface, and REST API. It provides secure file upload, scanning, and management.
+
 
 ## Features
 - Web interface for file management
